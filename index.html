@@ -10,31 +10,38 @@
 <body>
     <h1>Switch Statement</h1>
 
-<button class="btn btn-info" onclick="teamRank()">Rank </button>
+<button class="btn btn-info" onclick="teamrank()">Rank
+
+</button>
 
 <script>
-    function teamRank(){
-            case (rank <= "1st");
+
+
+    function teamrank(){
+        var rank = "1st";
+    var message = "";
+
+        case (rank === "1st"):
             message = "champions!";
             break;
 
-            case (rank <= "2nd");
+            case (rank === "2nd");
             message = "second place!";
             break;
 
-            case (rank <= "3rd");
+            case (rank === "3rd"):
             message = "third place!";
             break;
 
-            case (rank <= "4th");
+            case (rank === "4th"):
             message = "fourth place!";
             break;
 
-            default;
+            default:
             message = "rank could not be determined.";
         }
         alert(message);
-
+    }
 </script>
 </body>
 </html>
